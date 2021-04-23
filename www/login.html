@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link href="./fonts/font-awesome/font-awesome.min.css" rel="stylesheet">
+    <!-- Mobile Menu Style -->
+    <link href="./css/mobile-menu.css" rel="stylesheet">
+
+    <!-- Owl carousel -->
+    <link href="./css/owl.carousel.css" rel="stylesheet">
+    <link href="./css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Theme Style -->
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/materialize.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container sign-in-up">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="logo" style="text-align: center;padding: 20px;">
+                    <img id="logo" src="img/logo.png" alt="Tech NewsLogo">
+                </div>
+                <br>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="new">
+                        <br>
+                        <div class="entity_comment_from">
+                            <form id="myformRegister" style="margin-top:20px" action="">
+                                <div id="erreur">
+                                    <p>Vous n'avez pas rempli correctement le formulaire !</p>
+                                </div>
+                                <div class="article_title header_purple">
+                                    <br>
+                                    <h2><a target="_self">SignUp</a></h2>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nom">Nom</label>
+                                    <input type="text" class="form-control" id="nom" placeholder="Nom" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="prenom">Prénom</label>
+                                    <input type="text" class="form-control" id="prenom" placeholder="Prenom" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mdp">Mot de passe</label>
+                                    <input type="password" class="form-control" id="mdp" placeholder="Mot de passe"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mdp">Confirmation Mot de passe</label>
+                                    <input type="password" class="form-control" id="confirmation"
+                                        placeholder="Mot de passe" required>
+                                </div>
+                                <input type="submit" id="saveButton" class="btn btn-submit blue" value="Submit"
+                                    disabled></input>
+                                <input type="submit" id="refreshButton" class="btn btn-submit red"
+                                    value="Clear"></input>
+                            </form>
+                            <br>
+                            <p>If you have an account, click <a href="#user" role="tab" data-toggle="tab">Here</a> to
+                                login</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="tab-pane fade" id="user">
+                        <br>
+                        <div class="entity_comment_from">
+                            <form id="myformLogin">
+                                <div class="article_title header_purple" style="margin-top:20px">
+                                    <br>
+                                    <h2><a target="_self">SignIn</a></h2>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email2">Email</label>
+                                    <input type="text" class="form-control" id="email2" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="mdp2">Mot de passe</label>
+                                    <input type="password" class="form-control" id="mdp2" placeholder="Mot de passe">
+                                </div>
+                                <button type="submit" id="loginButton" class="btn btn-submit blue">Submit</button>
+                                <button type="reset" class="btn btn-submit red">Reset</button>
+                            </form>
+                            <p id="message" style="color:crimson"></p>
+                            <p>Don't have an account yet ? Click here to <a href="#new" role="tab"
+                                    data-toggle="tab">register!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+
+    <script src="cordova.js"></script>
+    <script src="./js/index.js" asp-append-version="true"></script>
+    <script src="./js/login.js" asp-append-version="true"></script>
+    <!-- <script src="./js/materialize.js"></script> -->
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Theme Menu -->
+    <script src="./js/mobile-menu.js"></script>
+    <!-- Owl carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- Theme Script -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
